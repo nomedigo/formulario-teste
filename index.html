@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="content">
+        <h1>Cadastre-se</h1>
+        <form id="form">
+            <div>
+                <input type="text" placeholder="Digite o seu nome" class="inputs required">
+                <span class="span-required">Nome deve ter pelo menos 3 caracteres</span>
+            </div>
+            <div>
+                <input type="email" placeholder="Digite o seu email" class="inputs required">
+                <span class="span-required">Digite um email valido</span>
+            </div>
+            <div>
+                <input type="password" placeholder="Digite sua a sua senha" class="inputs required">
+                <span class="span-required">Digite uma senha com no minimo 8 caracteres</span>
+            </div>
+            <div>
+                <input type="password" placeholder="Repita a sua senha" class="inputs required">
+                <span class="span-required">As senhas devem ser compativeis</span>
+            </div>
+            <textarea class="inputs" name="descricao" id="descricao" cols="25" rows="10" placeholder="Fale um pouco sobre voce"></textarea>
+            <p>Sexo:</p>
+            <div class="box-select">
+                <div>
+                    <input type="radio" id="m" value="m" name="sexo">
+                    <label for="m">Masculino</label>
+                </div>
+                <div>
+                    <input type="radio" id="f" value="f" name="sexo">
+                    <label for="f">Feminino</label>
+                </div>
+                <div>
+                    <input type="radio" id="o" value="o" name="sexo">
+                    <label for="o">Outros</label>
+                </div>  
+            </div>
+            <p>Quais são as suas habilidades</p>
+            <div class="box-select">
+                <div>
+                    <input type="checkbox" id="hmtl" value="html" name="habilidades">
+                    <label for="html">Html</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="css" value="css" name="habilidades">
+                    <label for="css">Css</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="js" value="js" name="habilidades">
+                    <label for="js">Java Script</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="react" value="react" name="habilidades">
+                    <label for="react">React.js</label>
+                </div>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
